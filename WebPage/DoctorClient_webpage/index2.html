@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First Test</title>
+        <h1>First Test of prescription algorithm!</h1>
+    </head>
+    <body>
+        <script>
+            class Patient{
+            constructor(PatientId,Start_Date, Start_Time, MedicineName, Every_how_many_hours){
+                this.PatientId = PatientId;
+                this.Start_Date = Start_Date;
+                this.Start_Time = Start_Time;
+                this.MedicineName = MedicineName; 
+                this.Every_how_many_hours = Every_how_many_hours;
+            }
+            
+            }
+        
+            const patient = new Patient('First Patient', 'Tuesday 2nd','3:50am(UTC)', 'Paracetamol', 6);
+
+                console.log("PatientName-",patient.PatientId);
+                console.log("PrescriptionStartDate-",patient.Start_Date);
+                console.log("PrescriptionStartTime-",patient.Start_Time);
+                console.log("MedicineName-",patient.MedicineName);
+    
+            
+            let dose_intervals = (24 / patient.Every_how_many_hours);
+                console.log("Dose Intervals-",dose_intervals);
+        </script>
+    </body>
+</html>
+
+
+
